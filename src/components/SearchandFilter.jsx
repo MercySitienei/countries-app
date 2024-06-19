@@ -1,4 +1,4 @@
-import React from 'react'
+import { CiSearch } from "react-icons/ci";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
@@ -42,8 +42,9 @@ const SearchandFilter = () => {
 
   return (
     <section className='flex flex-col lg:px-10 lg:flex-row  justify-between px-4 py-5'>
-      <form onSubmit={handleSubmit} className={` w-[100%] lg:w-[30%] mb-8 ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'} ${theme=== 'light' ? 'text-light-input' : 'text-[white]'} shadow-sm  rounded-md`}>
-        <input className={`p-2 rounded-md w-full focus:outline-none text-sm  ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'}`} type="search" value={searchData} onChange={handleInput}  name='search' id='search' placeholder='Search for a country...' />
+      <form onSubmit={handleSubmit} className={`flex items-center justify-center pl-4 w-[100%] lg:w-[30%] mb-8 ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'} ${theme=== 'light' ? 'text-light-input' : 'text-[white]'} shadow-sm  rounded-md`}>
+        <CiSearch/>
+        <input className={`p-2 ml-2 rounded-md w-full focus:outline-none text-sm  ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'}`} type="search" value={searchData} onChange={handleInput}  name='search' id='search' placeholder='Search for a country...' />
       </form>
       <div className={` w-[60%] lg:w-[auto] lg:h-4 ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'} ${theme=== 'light' ? 'text-light-input' : 'text-[white]'} shadow-sm rounded-md`}>
         <select onChange={handleFilter} className={` focus:outline-none p-2    border-none w-[180px]  ${theme=== 'light' ? 'bg-light-txt-elem' : 'bg-dark-elements'} ${theme=== 'light' ? 'text-[black]' : 'text-[white]'} shadow-sm rounded-md`} name="select" id="select">
