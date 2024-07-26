@@ -1,8 +1,38 @@
-# React + Vite
+# COUNTRIES APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An app integrated with the REST Countries API to pull country data.
 
-Currently, two official plugins are available:
+The users are able to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode
+
+## Table of contents
+
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+
+# Screenshot
+
+![](public/Screenshot.png)
+
+# Links
+
+- github URL: https://github.com/MercySitienei/countries-app
+- live site URL: https://mercysitienei.github.io/countries-app/
+
+# Built with
+
+- React.js
+- Vite
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- JavaScript
